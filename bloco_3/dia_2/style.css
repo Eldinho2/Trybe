@@ -1,0 +1,35 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+p{
+  font-weight: 600;
+  font-size: 3em;
+  font-style: oblique;
+  line-height:normal;
+  text-align: center;
+  text-decoration: dotted;
+}
+
+.cordefundo-p-ul{
+  background-color: rgb(138, 228, 126);
+
+}
+
+body{
+  font-size: 16px;
+}
+
+#amarelo{
+  background-color: yellow;
+}
+
+#vermelho{
+  background-color: red;
+}
+
+#marrom{
+  background-color: rgb(46, 14, 14);
+}
