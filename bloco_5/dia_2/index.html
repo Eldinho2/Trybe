@@ -93,6 +93,33 @@
 			rightContentDiv.className = ('right-content');
 			mainContentDiv.appendChild(rightContentDiv);
 
+			//7-Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+
+			let elementIMG = document.createElement('img');
+			elementIMG.className = ('small-image');
+			elementIMG.src = ('https://picsum.photos/200');
+			leftContentDiv.appendChild(elementIMG);
+
+			//8-Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
+			let ulList = document.createElement('ul');
+			rightContentDiv.appendChild(ulList);
+			let arrayList = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+			for (let number in arrayList) {
+				let li = document.createElement('li');
+				li.innerHTML = arrayList[number];
+				ulList.appendChild(li)
+			}
+			
+			//9-Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+
+			for (let index = 1; index <= 3; index += 1) {
+				let h3text = docmument.createElement('h3');
+				h3text.innerHTML = 'a' + index;
+				mainContentDiv.appendChild(h3text)
+			}
+
+
     </script>
   </body>
 </html>
