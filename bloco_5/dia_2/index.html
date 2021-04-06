@@ -57,23 +57,30 @@
   </head>
   <body>
     <script>
-			//Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+			//1-Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 			
 			let h1Text = document.createElement('h1');
 			h1Text.innerHTML = ('Exercício 5.2 - JavaScript DOM');
 			document.body.appendChild(h1Text);
 
-			//Adicione a tag div com a classe main-content como filho da tag body ;
+			//2-Adicione a tag div com a classe main-content como filho da tag body ;
 			
 			let mainContentDiv = document.createElement('div');
 			mainContentDiv.className = ('main-content');
 			document.body.appendChild(mainContentDiv);
 
-			//Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+			//3-Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
 			
 			let centerContentDiv = document.createElement('div');
 			centerContentDiv.className = ('center-content');
 			mainContentDiv.appendChild(centerContentDiv)
+
+			//4-Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+
+			let pText = document.createElement('p');
+			pText.innerHTML = ('On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.');
+			centerContentDiv.appendChild(pText);
+
     </script>
   </body>
 </html>
