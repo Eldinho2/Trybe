@@ -81,10 +81,36 @@ function createDaysOfTheWeek() {
 
   //exercicio 4-
 
-  function frideyButton (buttonName) {
-    let frideyButton = document.createElement('button');
-    frideyButton.innerText = string;
-    frideyButton.id = 'btn-friday'
-    buttonContainer.appendChild(frideyButton);
+  function createFridayButton(buttonName) {
+    let buttonContainer = document.querySelector('.buttons-container');
+    let newButton = document.createElement('button');
+    let newButtonID = 'btn-friday';
+  
+    newButton.innerHTML = buttonName;
+    newButton.id = newButtonID;
+    buttonContainer.appendChild(newButton);
+  };
+  
+  createFridayButton('Sexta-feira');
+
+  //exercicio 5-
+
+  function textFriday (fridaysArray) {
+    let getFridayButton = document.querySelector('#btn-friday');
+    let fridays = document.querySelectorAll('.friday');
+    let fridayText = 'Sextou!!';
+
+    getFridayButton.addEventListener('click', function() {
+      for (let index = 0; index < fridays.length; index += 1) {
+        if (fridays[index].innerHTML !== fridayText) {
+          fridays[index].innerHTML = fridayText;
+        } else {
+          fridays[index].innerHTML = fridaysArray[index];
+        }
+      }
+    })
   }
-  createCustomButton('Sexta-Feira');
+  let dezFridays = [ 4, 11, 18, 25 ];
+  textFriday (dezFridays);
+
+  //exercicio 6- 
