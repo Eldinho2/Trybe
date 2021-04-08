@@ -77,5 +77,14 @@ function createDaysOfTheWeek() {
       }
     })
   }
-
   colorHoliday();
+
+  //exercicio 4-
+
+  function frideyButton (buttonName) {
+    let frideyButton = document.createElement('button');
+    frideyButton.innerText = string;
+    frideyButton.id = 'btn-friday'
+    buttonContainer.appendChild(frideyButton);
+  }
+  createCustomButton('Sexta-Feira');
