@@ -1,0 +1,57 @@
+body {
+	font-size: 20px;
+	margin: 10px, 10px;
+	padding: 10px, 10px;
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+		padding: 15px 0px;
+}
+
+figure {
+    margin: 0;
+}
+
+/*telas PEQUENAS*/
+
+@media screen and (max-width: 414px) {
+  h1 p {
+		font-size: 15px;
+	}
+}
+
+/*telas NORMAIS*/
+
+@media screen and (min-width: 960px) {
+	body {
+	background-color: rgb(255, 255, 255);
+	font-size: x-large;
+	}
+
+	.imagens {
+		display: flex;
+		align-items: stretch;
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
+}
+
+/*telas GRANDES*/
+
+@media screen and (min-width: 1300px) {
+	body {
+		background-color: rgb(255, 255, 255);
+		font-size: 1.8em;
+		max-width: max-content;
+		margin: 10px 80px;
+		padding: 10px 10px;
+  }
+
+}
