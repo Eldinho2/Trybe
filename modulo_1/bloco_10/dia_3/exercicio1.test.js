@@ -5,5 +5,7 @@ describe('testes para funcao generateNumber', () => {
     exercicio1.generateNumber = jest.fn().mockReturnValue(10);
     
     expect(exercicio1.generateNumber()).toBe(10);
+    expect(exercicio1.generateNumber).toHaveBeenCalled()
+    expect(exercicio1.generateNumber).toHaveBeenCalledTimes(1)
   });
 })
