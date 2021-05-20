@@ -5,6 +5,6 @@ describe('testa uppercase', () => {
 		uppercase('teste', (str) => {
 			expect(str).toBe('TESTE');
 			done()
-		})
-	})
-})
+		});
+	});
+});
