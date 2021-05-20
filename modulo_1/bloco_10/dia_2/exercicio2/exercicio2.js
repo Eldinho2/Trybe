@@ -17,3 +17,4 @@ const getUserName = (userID) => {
   return findUserById(userID).then(user => user.name);
 };
 
+module.exports = { getUserName };
