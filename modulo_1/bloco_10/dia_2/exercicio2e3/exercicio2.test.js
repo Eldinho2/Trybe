@@ -20,6 +20,10 @@ describe('testes para funcao getUserName ASYNC/AWAIT', () => {
 
 	it('testa quando o id nao existe ASYNC/AWAIT', async () => {
 		expect.assertions(1);
-		return  await getUserName(2).catch(error => expect(error).toEqual({ error: 'User with 2 not found.'}));
+		try {
+			await getUserName(2)
+		} catch (error) {
+			expect(error).toEqual({ error: 'User with 2 not found.'})
+		}
 	});
 });
