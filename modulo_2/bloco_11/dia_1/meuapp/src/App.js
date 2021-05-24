@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+const textJSX = 'JSX';
+const element = `Hello, ${textJSX}`
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <h1>{element}</h1>
     </div>
   );
 }
