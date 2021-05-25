@@ -1,29 +1,18 @@
-import logo from './logo.svg';
+import About from './Component'
+import Task from './task'
 import './App.css';
 
-const textJSX = 'JSX';
-const element = `Hello, ${textJSX}`
+const tasks = ['aprender react', 'estudar', 'comer muita pizza', 'ser menos chato'];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <h1>{element}</h1>
-    </div>
-  );
+    <main>
+     <About/>
+     <ol>
+     {tasks.map((a) => Task(a))}
+     </ol>
+    </main>
+  )
 }
 
 export default App;
