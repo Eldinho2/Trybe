@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types"
 import ListaDePokemons from './data'
 import Pokedex from './Pokedex'
 import './Pokemon.css'
