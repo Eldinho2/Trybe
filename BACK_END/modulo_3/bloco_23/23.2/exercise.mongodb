@@ -46,6 +46,7 @@ db.superheroes.find({$and: [{"aspects.weight": { $gte: 80, $lte: 100 }},{$or: [{
 db.superheroes.count({ race: {$exists: false} })
 
 --- 17
+db.superheroes.count({ "aspects.hairColor": {$exists: true } })
 
 --- 18
 
