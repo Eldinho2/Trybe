@@ -10,8 +10,8 @@ db.superheroes.count({ "aspects.height": { $lt: 180 }})
 --- 4
 db.superheroes.count({ "aspects.height": { $lte: 180 }})
 
-
 --- 5
+db.superheroes.findOne({ "aspects.height": { $gte: 200 }})
 
 --- 6
 
