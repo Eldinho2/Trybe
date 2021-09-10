@@ -52,3 +52,4 @@ db.superheroes.count({ "aspects.hairColor": {$exists: true } })
 db.superheroes.deleteOne({ "publisher": "Sony Pictures" })
 
 --- 19
+db.superheroes.deleteMany({ "publisher": "George Lucas" })
