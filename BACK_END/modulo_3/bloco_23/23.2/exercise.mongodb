@@ -20,8 +20,10 @@ db.superheroes.count({ "aspects.height": { $gte: 200 }})
 db.superheroes.find({ "aspects.eyeColor": "green" })
 
 --- 8
+db.superheroes.count({ "aspects.eyeColor": "blue" })
 
 --- 9
+
 --- 10
 
 --- 11
