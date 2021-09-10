@@ -32,6 +32,7 @@ db.superheroes.count({ "aspects.hairColor": { $in: [ "Black", "NoHair" ] } })
 db.superheroes.count({ "aspects.hairColor": { $nin: [ "Black", "NoHair" ] } })
 
 --- 12
+db.superheroes.count({ "aspects.height": { $not: { $gt:180 } } })
 
 --- 13
 
