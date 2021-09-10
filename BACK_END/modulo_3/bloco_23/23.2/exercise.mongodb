@@ -43,6 +43,7 @@ db.superheroes.find({ $and: [ { $or: [ {"aspects.height": 180 }, {"aspects.heigh
 --- 15
 db.superheroes.find({$and: [{"aspects.weight": { $gte: 80, $lte: 100 }},{$or: [{ race: "Human" },{race: "Mutant" }]},{publisher: { $ne: "DC Comics" }}]})
 --- 16
+db.superheroes.count({ race: {$exists: false} })
 
 --- 17
 
