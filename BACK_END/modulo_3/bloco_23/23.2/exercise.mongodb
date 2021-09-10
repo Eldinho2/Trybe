@@ -41,7 +41,7 @@ db.superheroes.find({ $nor: [ { race: "Human" }, {"aspects.heigth": { $gt: 180 }
 db.superheroes.find({ $and: [ { $or: [ {"aspects.height": 180 }, {"aspects.height": 200}, { publisher: "Marvel Comics"}]}]})
 
 --- 15
-
+db.superheroes.find({$and: [{"aspects.weight": { $gte: 80, $lte: 100 }},{$or: [{ race: "Human" },{race: "Mutant" }]},{publisher: { $ne: "DC Comics" }}]})
 --- 16
 
 --- 17
