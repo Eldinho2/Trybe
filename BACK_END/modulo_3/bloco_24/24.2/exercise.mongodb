@@ -9,3 +9,10 @@ db.movies.updateOne(
 db.movies.updateOne(
     {title: "Batman"},
     { $addToSet: { category: { $each: ["villain", "comic-based"] } } })
+
+-- 3: Remova a categoria "action" do filme Batman .
+
+db.movies.updateOne(
+    {title: "Batman"},
+    { $pull: { category: "action" } })
+
