@@ -1,0 +1,28 @@
+{
+  "name": "26.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "exercicio1": "node exercicio1.js",
+    "exercicio2": "node exercicio2.js",
+    "exercicio3": "node exercicio3.js",
+    "exercicio4": "node exercicio4.js",
+    "exercicio5": "node exercicio5.js",
+    "bonus1": "node bonus1.js",
+    "bonus2": "node bonus2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "lint": "^0.7.0"
+  },
+  "devDependencies": {
+    "i": "^0.3.7",
+    "npm": "^7.24.1",
+    "readline-sync": "^1.4.10"
+  }
+}
